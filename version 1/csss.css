@@ -1,0 +1,43 @@
+.input_file {
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.input_file input[type=file] {
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    height: 34px;
+    width: 300px;
+}
+
+.fake_file {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.fake_file input[type=button] {
+    border-radius: 17px;
+    behavior: url(PIE.htc);
+    height: 34px;
+    background-color: #f13fa8;
+    border: none;
+    color: #fff;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.fake_file_input{
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    behavior: url(PIE.htc);
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    width: 210px;
+}

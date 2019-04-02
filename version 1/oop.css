@@ -1,0 +1,411 @@
+
+* {
+	margin: 0;
+	padding: 0;
+
+	}
+
+	html {
+	width: 100%;
+	height: 100%;
+	}
+
+body {
+
+		border: none;
+		background: url(images/orn1.png) 34% 0 repeat-y;
+
+}
+
+.thread {
+	margin-top: -0.9%;
+	margin-left: 85%;
+}
+
+.thread_part{
+	margin: auto 0;
+
+	padding: 0;
+}
+
+.header {
+		padding-left: 7px;
+		margin-bottom: 22px;
+		color: black;
+		font-weight: bold;
+		outline: px solid black;
+		margin-top: 2%;
+		font-size: 22px;
+		font-family: 'PT Serif', serif;
+		text-align: center;
+	}
+
+.head {
+		font-family: 'PT Serif', serif;
+		font-size: 30px;
+		color: #F60000;
+		}
+
+a {
+	color: black;
+	text-decoration: underline;
+	}
+
+.notebook {
+    white-space: nowrap;
+    overflow: hidden;
+	margin-top: 20px;
+}
+
+.notebook > input, #dopmat > input {
+    display: none;
+}
+
+.notebook > input + label {
+	width: 34%;
+	display: block;
+	padding-left: 20px;
+	cursor: pointer;
+	position: relative;
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 25px;
+}
+
+.notebook > input + label:hover {
+   font-size: 22px;
+   cursor: pointer;
+}
+
+#dopmat > input + label {
+	border-top: 2px solid black;
+	margin-top: 2%;
+	padding-top: 0.5%;
+	width: 25%;
+	padding-left: 20px;
+}
+
+#dopmat > input + label:hover {
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.notebook > input:checked + label, #dopmat > input:checked + label {
+     color: #F60000;
+	 font-size: 22px;
+}
+
+   .notebook > div, #dopmat > div {
+    float: right;
+    white-space: normal;
+    display: none;
+    padding-left: 20px;
+    position: fixed;
+	top: 0;
+	right: 0;
+    margin-right: 0px;
+	width: 60%;
+}
+
+iframe {
+	white-space: normal;
+    padding-left: 0;
+	padding-right: 0;
+    position: fixed;
+	top: 0;
+	right: 0;
+    margin-right: 0;
+	margin-left: 0;
+	width: 63.5%;
+	height: 90%;
+	border: none;
+
+	}
+
+.docZone {
+	float: right;
+    white-space: normal;
+    position: fixed;
+	bottom: 0;
+	right: 0;
+
+	width: 63.5%;
+	height: 10%;
+	/*background: url(images/7.png) 0 -25% repeat-x;*/
+	}
+
+.doc a, .return a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	padding-bottom: 2%;
+	font-family: 'PT Serif', serif;
+	}
+
+
+.notebook iframe, .notebook .docZone {
+	border-left: px solid #373737;
+	}
+
+.notebook > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.notebook > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.notebook > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+.notebook > input:nth-of-type(4):checked ~ div:nth-of-type(4),
+.notebook > input:nth-of-type(5):checked ~ div:nth-of-type(5),
+.notebook > input:nth-of-type(6):checked ~ div:nth-of-type(6),
+.notebook > input:nth-of-type(7):checked ~ div:nth-of-type(7),
+.notebook > input:nth-of-type(8):checked ~ div:nth-of-type(8),
+.notebook > input:nth-of-type(9):checked ~ div:nth-of-type(9){
+    display: inline-block;
+}
+
+#dopmat > input:nth-of-type(1):checked ~ div:nth-of-type(1){
+    display: inline-block;
+}
+
+
+.return,
+.doc,
+.send input {
+
+  color: rgba(255,255,255,.6);
+  text-shadow: 1px 1px rgba(0,0,0,.3);
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 15px;
+  background:  #515151;
+  box-shadow:
+   inset 0 /*сдвиг по x*/ 0 /*сдвиг по  y*/ 3px /*радиус размытия*/ 1px /*растяжение*/ rgba(0,0,0,.8),
+   inset rgba(0,0,0,.3) -5px -5px 8px 5px,
+   inset rgba(255,255,255,.5) 5px 5px 8px 5px,
+   1px 1px 1px rgba(255,255,255,.1),
+   -2px -2px 5px rgba(0,0,0,.5);
+  transition: .2s;
+  	height: 20px;
+	text-align: center;
+	bottom:7px;
+	position: fixed;
+
+
+	left: 20px;
+	padding: 3px;
+}
+
+.return {
+	margin-left: 7%;
+	width: 18%;
+	}
+
+.doc {
+	margin-left: 60%;
+	width: 17.5%;
+}
+
+.send input{
+	margin-left: 9%;
+	width: 15%;
+	height: 4%;
+	color: white;
+	font-size: 15px;
+}
+
+.modalDialog {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	background: white;
+	width: 36.4%;
+	height: 100%;
+
+   /* -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;*/
+    display: none;
+	background: url(images/romb.png) 480px 0 repeat;
+    }
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+ .modalDialog > div {
+
+    position: relative;
+    margin-right: 0;
+	margin-bottom: 0;
+    padding: 15px 20px 13px 20px;
+    border-radius: 5px;
+    border: px solid #5C5C5C;
+	height: 100%;
+}
+
+.close {
+    color: #000000;
+   /* line-height: 25px;*/
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 8%;
+    text-decoration: none;
+    font-weight: bold;
+   /* -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;*/
+    border-radius: 25%;
+	border: 2px solid #000000;
+    font-family: Verdana;
+	padding: 0;
+}
+
+.close:hover {
+	border: 2px solid #000000;
+}
+
+
+
+ input, textarea {
+	border: 1px solid #5C5C5C;
+	margin-left: 10px;
+	padding: 6px;
+	outline: 0;
+
+	width: 350px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+textarea {
+	width: 400px;
+	height: 300px;
+	resize: none;
+	}
+
+
+/*.send input {
+	width: 6em;
+	border: 1px solid #5C5C5C;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	margin-top: 30px;
+	}*/
+
+
+
+
+p label {
+	margin-left: 15px;
+	/*font-style: italic;*/
+	color: #000000;
+	font-size: 15px;
+	font-weight: 200;
+}
+.name input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.name input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.name input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.name input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.name input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.name input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.name input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.name input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+.email input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.email input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.email input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.email input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.email input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.email input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.email input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.email input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+
+
+.msg textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.msg textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.msg textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.msg textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.msg textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.msg textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.msg textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.msg textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.name input {
+	border: px solid black;
+	}
+
+input:hover, textarea:hover, input:focus, textarea:focus, .file-upload:hover {
+	border: 2px solid #373737;
+
+}
+
+
+
+	.file-upload {
+		display: inline;
+		 position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+		 overflow: hidden; /* Все что выходит за пределы - скрываем */
+		 margin-left: 10px;
+		 height: 40px;
+			color: #FFFFFF;
+	   text-shadow: 1px 1px rgba(0,0,0,.3);
+	   text-decoration: none;
+	   padding: 3px;
+	   border-radius: 15px;
+	   background:  #515151;
+	   box-shadow:
+	    inset 0 /*сдвиг по x*/ 0 /*сдвиг по  y*/ 3px /*радиус размытия*/ 1px /*растяжение*/ rgba(0,0,0,.8),
+	    inset rgba(0,0,0,.3) -5px -5px 8px 5px,
+	    inset rgba(255,255,255,.5) 5px 5px 8px 5px,
+	    1px 1px 1px rgba(255,255,255,.1),
+	    -2px -2px 5px rgba(0,0,0,.5);
+	   transition: .2s;
+  	 	text-align: center;
+
+	}
+
+
+	.file-upload input[type="file"]{
+		display: none; /* Обязательно скрываем настоящий Input File */
+	}
+	.file-upload label {
+		display: inline-block;
+		 text-align: center;
+		 position: relative;
+		 width: 150px;
+		 height: 60px;
+		 cursor: pointer;
+		 padding: 10px;
+	}
+	.file-upload span {
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	line-height: 36px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+	font-weight: normal;
+  }
+
+
+	.filename {
+	display: inline;
+	width: 215px;
+	height: 20px;
+	background: #fff;
+	border: none;
+	border-radius: 15px;
+	}
+
+.filename:hover {
+	border: none;
+}
+
+#container {
+	font-family: "PT Serif", serif;
+
+	}
+#first_iframe {
+	height:100%;
+}
