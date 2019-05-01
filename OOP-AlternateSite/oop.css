@@ -79,6 +79,7 @@ a {
 }
 
 #dopmat > input + label {
+  position: absolute;
 	border-top: 2px solid black;
 	margin-top: 2%;
 	padding-top: 0.5%;
