@@ -1,3 +1,4 @@
+<script src="/OOP-SITE/js/autoDateUpdate.js"></script>
 <div id="intro" class="lr_text">
 	<style scoped>
 
@@ -29,8 +30,10 @@
 			padding-bottom: 10px;
 		}
 
-		.stamp {
-			padding-right: 40px;
+		#stampCanvas {
+			position: relative;
+			left:250px;
+
 		}
 
 		#pay {
@@ -52,8 +55,8 @@
 		<p class='paragraph'>Алещенко Олексій Вадимович</p>
 
 	</div>
-
-	 <img src="images/stamp.png" alt="печатка" class="stamp">
+	<canvas id="stampCanvas" width="200" height="200"></canvas>
+	 <!--<img src="images/stamp.png" alt="печатка" class="stamp">-->
 
 
 

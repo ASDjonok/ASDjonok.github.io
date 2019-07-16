@@ -392,3 +392,46 @@ a.active {
 #first_iframe {
     height: 100%;
 }
+
+
+.img_container{
+    overflow: hidden;
+}
+.flex-img .img_container{
+    margin:10px;
+    padding:0px;
+    box-sizing: content-box;
+    width:260px;
+    border: 3px solid #83D300;
+    border-radius: 4px;
+    box-shadow: 8px 6px 12px 0px #000000;
+}
+
+.flex-img .img_container:hover{
+   border:3px solid #009200;
+   box-shadow: 10px 8px 12px 0px #000000;
+}
+
+.flex-img {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.labour_head{
+    text-align: center;
+}
+#bookIcon{
+    position: absolute;
+    width:25px;
+    left:18px;
+    top: 15px;
+}
+@media (min-width:1203px){
+    .flex-img{
+        flex-direction: row;
+    }
+}
+
