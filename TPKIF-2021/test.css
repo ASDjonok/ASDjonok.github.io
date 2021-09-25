@@ -1,0 +1,7 @@
+body {
+    background: lightcyan;
+}
+
+body > h1:nth-child(1) {
+    background: red;
+}
