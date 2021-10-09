@@ -1,3 +1,31 @@
 body {
     background: lightcyan;
 }
+
+#container {
+    display: flex;
+    border: 4px double black;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.block1 {
+    background-color: red;
+    padding: 10px;
+}
+
+.block2 {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.block3 {
+    background-color: green;
+    padding: 15px;
+}
+
+.block4 {
+    background-color: blue;
+    padding: 5px;
+}
