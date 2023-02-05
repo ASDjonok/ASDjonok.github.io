@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'neosanspro-regular';
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-REGULAR.eot');
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-REGULAR.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-REGULAR.woff') format('woff'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-REGULAR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/OPENSANS/OPENSANS-LIGHT.eot');
+    src: url('../fonts/OPENSANS/OPENSANS-LIGHT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.woff') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.woff2') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.svg') format('woff'),
+    url('../fonts/OPENSANS/OPENSANS-LIGHT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neosanspro-medium';
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.eot');
+    src: url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.woff') format('woff'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.woff2') format('woff2'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.svg') format('woff'),
+    url('../fonts/NEOSANSPRO/NEOSANSPRO-MEDIUM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="fonts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/OOP-SITE/fonts/webfontkit-20170907-064359.zip!/" />
+      <root url="jar://$PROJECT_DIR$/OOP-SITE/fonts/ef_conv_zip_yxsb9hbWQG0aDFyT_0uakQeF.zip!/" />
+      <root url="jar://$PROJECT_DIR$/OOP-SITE/fonts/ef_conv_zip_S2zlyqwv4MKndo_px7ZVpgeF.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

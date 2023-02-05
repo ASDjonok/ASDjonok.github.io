@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>if -> ?</title>
+	</head>
+	<body>
+		<script>
+		(a + b) < 4 ? result = 'Мало': result = 'Много';
+		
+		message = (login == 'Вася') ?
+			'Привет': 
+		    (login == 'Директор') ?
+			'Здравствуйте':
+			 (login == '')?
+			'нет логина':
+			'';
+			
+			
+			
+		</script>
+	</body>
+</html>
