@@ -25,6 +25,9 @@
           console.log('You said: ', data);
           document.getElementById(1).innerText = data;
       };
+
+      recognition.onend = () => {recognition.start();}
+
     </script>
 </body>
 </html>
