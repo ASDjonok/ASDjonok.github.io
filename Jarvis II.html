@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis II</title>
+</head>
+<body>
+    <h1 id="1">Скажи щось, а я напишу;)</h1>
+    <script>
+      /**
+       * copied from https://davidwalsh.name/speech-recognition
+       */
+      var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+      // recognition.lang = 'en-US';
+      recognition.lang = 'uk';
+      recognition.continuous = true;
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 5;
+      recognition.start();
+
+      counter = 0;
+
+      recognition.onresult = function(event) {
+          const data = event.results[counter++][0].transcript.trim();
+          console.log('You said: ', data);
+          document.getElementById(1).innerText = data;
+      };
+    </script>
+</body>
+</html>
