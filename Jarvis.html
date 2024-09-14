@@ -22,7 +22,9 @@
 
       recognition.onresult = function(event) {
           // const data = event.results[counter++][0].transcript.trim();
-          const data = event.results[0][0].transcript.trim();
+          const data = navigator.userAgentData.mobile
+              ? event.results[0][0].transcript.trim()
+              : event.results[counter++][0].transcript.trim();
           // alert(counter++);
           console.log('You said: ', data);
           document.getElementById(1).innerText = data;
