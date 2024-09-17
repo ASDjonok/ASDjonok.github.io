@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://pixijs.download/release/pixi.js"></script>
+    </head>
+    <body>
+        <h1>Hello PixiJS</h1>
+        <script type="module">
+            const app = new PIXI.Application();
+            await app.init({ width: 640, height: 360 });
+            document.body.appendChild(app.canvas);
+            await PIXI.Assets.load('sample.png');
+            let sprite = PIXI.Sprite.from('sample.png');
+            app.stage.addChild(sprite);
+        </script>
+    </body>
+</html>
