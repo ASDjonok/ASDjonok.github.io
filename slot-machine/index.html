@@ -6,9 +6,24 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script src="pixi.min.js"></script>
+<!--    todo change to prod -->
+    <script src="libs/dev/pixi.js"></script>
+    <script src="libs/dev/tween.umd.js"></script>
+
+    <script src="engine/Field.js"></script>
+    <script src="engine/Roll.js"></script>
+    <script src="engine/Symbol.js"></script>
+    <script src="engine/SpinButton.js"></script>
+    <script src="engine/BetController.js"></script>
+    <script src="engine/Footer.js"></script>
+    <script src="engine/Header.js"></script>
+    <script src="engine/RollsContainer.js"></script>
+    <script src="services/MockAPI.js"></script>
+    <script src="utilities/Utilities.js"></script>
+
+    <script src="config.js"></script>
 </head>
 <body>
-    <script src="Game.js"></script>
+    <script type=module src="Game.js"></script>
 </body>
 </html>
