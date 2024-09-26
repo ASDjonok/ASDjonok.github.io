@@ -1,4 +1,4 @@
-import {Container, Text} from "../../libs/dev/pixi.mjs";
+import {Container, Text} from "../libs/pixi.min.mjs";
 import BetController from "./BetController.js";
 import {CONFIG} from "../config.js";
 

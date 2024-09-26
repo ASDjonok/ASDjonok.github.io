@@ -1,4 +1,4 @@
-import {Container} from "../../libs/dev/pixi.mjs";
+import {Container} from "../libs/pixi.min.mjs";
 import SpinButton from "./SpinButton.js";
 import {CONFIG} from "../config.js";
 

@@ -1,5 +1,5 @@
-import {Tween} from "../../libs/dev/tween-25.0.0.esm.js";
-import {Container, Texture} from "../../libs/dev/pixi.mjs";
+import {Tween} from "../libs/tween-25.0.0.esm.min.js";
+import {Container, Texture} from "../libs/pixi.min.mjs";
 import {CONFIG} from "../config.js";
 import Symbol from "./Symbol.js";
 import Utilities from "../utilities/Utilities.js";

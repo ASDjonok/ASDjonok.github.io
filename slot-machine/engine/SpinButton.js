@@ -1,4 +1,4 @@
-import {Container, Graphics, Text} from "../../libs/dev/pixi.mjs";
+import {Container, Graphics, Text} from "../libs/pixi.min.mjs";
 import {CONFIG} from "../config.js";
 import Utilities from "../utilities/Utilities.js";
 

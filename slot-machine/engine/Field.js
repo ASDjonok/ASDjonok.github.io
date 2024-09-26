@@ -1,6 +1,6 @@
-import {Container, Graphics, Text} from "../../libs/dev/pixi.mjs";
+import {Container, Graphics, Text} from "../libs/pixi.min.mjs";
 import {CONFIG, YELLOW_COLOR} from "../config.js";
-import {Tween} from "../../libs/dev/tween-25.0.0.esm.js";
+import {Tween} from "../libs/tween-25.0.0.esm.min.js";
 import RollsContainer from "./RollsContainer.js";
 import Footer from "./Footer.js";
 import Header from "./Header.js";

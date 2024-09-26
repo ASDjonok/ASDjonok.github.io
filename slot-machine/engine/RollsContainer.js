@@ -1,4 +1,4 @@
-import {Container, Graphics} from "../../libs/dev/pixi.mjs";
+import {Container, Graphics} from "../libs/pixi.min.mjs";
 import Roll from "./Roll.js";
 import {CONFIG} from "../config.js";
 
