@@ -42,7 +42,7 @@ export default class Utilities {
                                     })
                                     .start();
                                 Game.tweenGroup.add(textAlphaDecreaseTween);
-                            }, 500);
+                            }, 750);
                         }
                     })
                     .start();
