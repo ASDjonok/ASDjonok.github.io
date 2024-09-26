@@ -16,7 +16,7 @@ class Game {
 
     static async init() {
         Game.app = new Application();
-        await Game.app.init({ background: CONFIG.backgroundColor, resizeTo: window });
+        await Game.app.init({ background: CONFIG.backgroundColor, resizeTo: window, antialias: true });
         document.body.appendChild(Game.app.canvas);
 
         Game.app.ticker.add(Game.tick, this);
