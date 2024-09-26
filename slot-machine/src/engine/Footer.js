@@ -1,4 +1,8 @@
-class Footer extends PIXI.Container {
+import {Container} from "../../libs/dev/pixi.mjs";
+import SpinButton from "./SpinButton.js";
+import {CONFIG} from "../config.js";
+
+export default class Footer extends Container {
     constructor() {
         super();
 

@@ -1,4 +1,7 @@
-class BetController extends PIXI.Container {
+import {Container, Graphics, Text} from "../../libs/dev/pixi.mjs";
+import {CONFIG} from "../config.js";
+
+export default class BetController extends Container {
     constructor() {
         super();
 
@@ -11,7 +14,7 @@ class BetController extends PIXI.Container {
     }
 
     initText() {
-        this.text = new PIXI.Text({
+        this.text = new Text({
             text: 'BET:',
             style: {
                 fontFamily: 'Arial',
@@ -29,12 +32,12 @@ class BetController extends PIXI.Container {
     initButtons() {
         this.buttons = [];
         for (let i = 0; i < CONFIG.apiResponse.bets.length; i++) {
-            const buttonContainer = new PIXI.Container();
-            const button = new PIXI.Graphics();
+            const buttonContainer = new Container();
+            const button = new Graphics();
             button.roundRect(0, 0, CONFIG.betButton.width, CONFIG.betButton.height, CONFIG.betButton.radius);
             button.fill(CONFIG.betButton.color);
 
-            const text = new PIXI.Text({
+            const text = new Text({
                 text: CONFIG.apiResponse.bets[i],
                 style: {
                     fontFamily: 'Arial',

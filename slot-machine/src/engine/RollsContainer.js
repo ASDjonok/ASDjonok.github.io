@@ -1,4 +1,8 @@
-class RollsContainer extends PIXI.Container {
+import {Container, Graphics} from "../../libs/dev/pixi.mjs";
+import Roll from "./Roll.js";
+import {CONFIG} from "../config.js";
+
+export default class RollsContainer extends Container {
     constructor() {
         super();
 
@@ -14,7 +18,7 @@ class RollsContainer extends PIXI.Container {
     }
 
     initMargin() {
-        this.addChild(new PIXI.Graphics()
+        this.addChild(new Graphics()
                 .rect(0, 0,
                     this.borderRectangleWidth() + CONFIG.rollsContainerBorderMargin * 2,
                     this.borderRectangleHeight() + CONFIG.rollsContainerBorderMargin * 2)
@@ -24,7 +28,7 @@ class RollsContainer extends PIXI.Container {
     }
 
     initBorder() {
-        this.addChild(new PIXI.Graphics()
+        this.addChild(new Graphics()
                 .rect(CONFIG.rollsContainerBorderMargin, CONFIG.rollsContainerBorderMargin, this.borderRectangleWidth(),
                     this.borderRectangleHeight())
                 .fill({color: 0x000000, alpha: 0})

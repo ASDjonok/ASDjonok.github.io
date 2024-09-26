@@ -1,4 +1,10 @@
-class Roll extends PIXI.Container {
+import {Tween} from "../../libs/dev/tween-25.0.0.esm.js";
+import {Container, Texture} from "../../libs/dev/pixi.mjs";
+import {CONFIG} from "../config.js";
+import Symbol from "./Symbol.js";
+import Utilities from "../utilities/Utilities.js";
+
+export default class Roll extends Container {
     constructor(rollNumber) {
         super();
 
@@ -36,16 +42,16 @@ class Roll extends PIXI.Container {
 
     initSymbolsTextures() {
         Symbol.symbolsTextures = [
-            PIXI.Texture.from('assets/light_rotate_1.png'),
-            PIXI.Texture.from('assets/light_rotate_2.png'),
-            PIXI.Texture.from('assets/rt_object_01.png'),
-            PIXI.Texture.from('assets/rt_object_02.png'),
-            PIXI.Texture.from('assets/rt_object_03.png'),
-            PIXI.Texture.from('assets/rt_object_04.png'),
-            PIXI.Texture.from('assets/rt_object_05.png'),
-            PIXI.Texture.from('assets/rt_object_06.png'),
-            PIXI.Texture.from('assets/rt_object_07.png'),
-            PIXI.Texture.from('assets/rt_object_08.png'),
+            Texture.from('assets/light_rotate_1.png'),
+            Texture.from('assets/light_rotate_2.png'),
+            Texture.from('assets/rt_object_01.png'),
+            Texture.from('assets/rt_object_02.png'),
+            Texture.from('assets/rt_object_03.png'),
+            Texture.from('assets/rt_object_04.png'),
+            Texture.from('assets/rt_object_05.png'),
+            Texture.from('assets/rt_object_06.png'),
+            Texture.from('assets/rt_object_07.png'),
+            Texture.from('assets/rt_object_08.png'),
         ];
     }
 
@@ -59,7 +65,7 @@ class Roll extends PIXI.Container {
         this.addNewSymbol();
 
         this.symbols.forEach((symbol, i) => {
-            new TWEEN.Tween(symbol)
+            const symbolPositionDownTween = new Tween(symbol)
                 .to({y: symbol.y + this.symbolsDeltaY}, CONFIG.timeMovingSymbolToNextPosition)
                 .onComplete(() => {
                     if (i === CONFIG.rowsQuantity - 1) {
@@ -74,6 +80,7 @@ class Roll extends PIXI.Container {
                     }
                 })
                 .start();
+            Game.tweenGroup.add(symbolPositionDownTween);
         });
     }
 

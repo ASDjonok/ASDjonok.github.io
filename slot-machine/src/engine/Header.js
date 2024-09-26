@@ -1,4 +1,8 @@
-class Header extends PIXI.Container {
+import {Container, Text} from "../../libs/dev/pixi.mjs";
+import BetController from "./BetController.js";
+import {CONFIG} from "../config.js";
+
+export default class Header extends Container {
     constructor() {
         super();
 
@@ -19,7 +23,7 @@ class Header extends PIXI.Container {
     }
 
     initBalance() {
-        this.balance = new PIXI.Text({
+        this.balance = new Text({
             text: 'BALANCE: ' + CONFIG.apiResponse.balance,
             style: {
                 fontFamily: 'Arial',
